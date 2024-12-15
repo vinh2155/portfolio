@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Avigea";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/src/assets/Avigea.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/src/assets/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  }
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
