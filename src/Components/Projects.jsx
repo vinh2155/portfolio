@@ -7,7 +7,7 @@ export default function Projects() {
         id="projects"
         className="bg-slate-900 p-4 sm:p-10 flex flex-col sm:items-center justify-center w-screen"
       >
-        <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-4 sm:pb-12 text-amber-100/[.98]">
+        <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-4 sm:pb-12 text-amber-200/[.98]">
           Recent Projects
         </p>
         <div className="grid gap-6 md:grid-cols-2 grid-cols-1 sm:max-w-5xl">

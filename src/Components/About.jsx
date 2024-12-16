@@ -4,7 +4,7 @@ export default function About() {
       id="about"
       className="bg-gradient-to-b from-slate-800 to-slate-900 p-4 pt-10 pb-10 sm:p-10 w-full flex flex-col sm:items-center justify-center"
     >
-      <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-100/[.98]">
+      <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]">
         Hi, I'm Katie
       </p>
       <div className="text-xl text-slate-200 tracking-tight pb-1 sm:max-w-3xl">

@@ -4,7 +4,7 @@ export default function TechStack() {
     <>
       <div className="bg-gradient-to-b from-slate-900 to-slate-800 px-0 pt-10 pb-10 sm:p-20 w-full flex flex-col sm:items-center justify-center">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-center">
-          <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-100/[.98]">
+          <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]">
             Tools
           </h2>
           <div className="mt-10 grid grid-cols-1  gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
