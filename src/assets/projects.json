@@ -6,7 +6,7 @@
     "live": "https://waldo-1qf2.onrender.com/",
     "repo": "https://github.com/katiegd/waldo",
     "tech": ["Node.js", "Express", "PrismaORM", "PostgreSQL", "React", "CSS"],
-    "src": "src/assets/images/finditfuturama.png"
+    "src": "images/finditfuturama.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "live": "https://inventory-app-jbjm.onrender.com/",
     "repo": "https://github.com/katiegd/inventory-app",
     "tech": ["Node.js", "Express", "PostgreSQL", "EJS", "Bootstrap"],
-    "src": "src/assets/images/frootie.png"
+    "src": "images/frootie.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "live": "https://members-only-t2xa.onrender.com/",
     "repo": "https://github.com/katiegd/members-only",
     "tech": ["Node.js", "Express", "Passport", "PostgreSQL", "Bcrypt", "EJS"],
-    "src": "src/assets/images/member-ship.png"
+    "src": "images/member-ship.png"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "live": "https://katiegd.github.io/weather-app/",
     "repo": "https://github.com/katiegd/weather-app",
     "tech": ["Javascript", "CSS", "Webpack"],
-    "src": "src/assets/images/weatherbee.png"
+    "src": "images/weatherbee.png"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "live": "https://clinquant-toffee-8944a0.netlify.app/",
     "repo": "https://github.com/katiegd/CV-Application",
     "tech": ["React", "CSS"],
-    "src": "src/assets/images/resumebuilder.png"
+    "src": "images/resumebuilder.png"
   },
   {
     "id": 6,
@@ -51,6 +51,6 @@
     "live": "https://jaquetteshop.netlify.app/shop",
     "repo": "https://github.com/katiegd/shopping-cart",
     "tech": ["React", "CSS"],
-    "src": "src/assets/images/jaquette.png"
+    "src": "images/jaquette.png"
   }
 ]
