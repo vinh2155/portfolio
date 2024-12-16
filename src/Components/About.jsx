@@ -2,12 +2,12 @@ export default function About() {
   return (
     <div
       id="about"
-      className="bg-slate-100/[.97]  px-10 py-10 shadow-md  lg:rounded-3xl lg:max-w-6xl mb-10 mt-10"
+      className="bg-gradient-to-b from-slate-800 to-slate-900 p-4 pt-10 pb-10 sm:p-10 w-full flex flex-col sm:items-center justify-center"
     >
-      <p className="text-5xl font-serif font-bold tracking-tight pb-2 bg-gradient-to-r from-blue-600 to-indigo-800 inline-block text-transparent bg-clip-text">
-        Hi, I'm Katie!
+      <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-100/[.98]">
+        Hi, I'm Katie
       </p>
-      <div className="text-xl tracking-tight pb-1">
+      <div className="text-xl text-slate-200 tracking-tight pb-1 sm:max-w-3xl">
         <p className="pb-4">
           I am a creative self-starter with a passion for learning,
           problem-solving, and exploring new technologies. My background in

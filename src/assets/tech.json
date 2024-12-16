@@ -1,0 +1,84 @@
+[
+  {
+    "frontend": [
+      {
+        "id": 0,
+        "name": "HTML",
+        "image": "src/assets/images/tech/html-5-svgrepo-com.svg"
+      },
+      {
+        "id": 1,
+        "name": "CSS",
+        "image": "src/assets/images/tech/css-3-svgrepo-com.svg"
+      },
+      {
+        "id": 2,
+        "name": "Javascript",
+        "image": "src/assets/images/tech/js-svgrepo-com.svg"
+      },
+      {
+        "id": 3,
+        "name": "React",
+        "image": "src/assets/images/tech/react-svgrepo-com.svg"
+      },
+      {
+        "id": 4,
+        "name": "Tailwind",
+        "image": "src/assets/images/tech/tailwind-svgrepo-com.svg"
+      },
+      {
+        "id": 5,
+        "name": "Bootstrap",
+        "image": "src/assets/images/tech/bootstrap-icon.svg"
+      }
+    ]
+  },
+  {
+    "backend": [
+      {
+        "id": 0,
+        "name": "Node.js",
+        "image": "src/assets/images/tech/node-js-svgrepo-com.svg"
+      },
+      {
+        "id": 1,
+        "name": "Express.js",
+        "image": "src/assets/images/tech/Express.svg"
+      },
+      {
+        "id": 2,
+        "name": "PostgreSQL",
+        "image": "src/assets/images/tech/postgresql-icon.svg"
+      },
+      {
+        "id": 3,
+        "name": "Prisma ORM",
+        "image": "src/assets/images/tech/prisma-3.svg"
+      }
+    ]
+  },
+  {
+    "other": [
+      {
+        "id": 0,
+        "name": "Github",
+        "image": "src/assets/images/github-svgrepo-com.svg"
+      },
+      {
+        "id": 1,
+        "name": "npm",
+        "image": "src/assets/images/tech/npm-svgrepo-com.svg"
+      },
+      {
+        "id": 2,
+        "name": "Jest",
+        "image": "src/assets/images/tech/jest-2.svg"
+      },
+      {
+        "id": 3,
+        "name": "Photoshop",
+        "image": "src/assets/images/tech/adobe-photoshop-svgrepo-com.svg"
+      }
+    ]
+  }
+]
