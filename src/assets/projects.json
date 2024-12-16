@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Find It: Futurama",
+    "description": "This project combines backend and frontend functionality to create an interactive \"Where's Waldo?\"-style game. Users search for hidden characters in an image, receive feedback, and track their scores.",
+    "live": "https://waldo-1qf2.onrender.com/",
+    "repo": "https://github.com/katiegd/waldo",
+    "tech": ["Node.js", "Express", "PrismaORM", "PostgreSQL", "React", "CSS"],
+    "src": "src/assets/images/finditfuturama.png"
+  },
+  {
+    "id": 2,
+    "name": "Frootie Inventory App",
+    "description": "A full-featured CRUD app for managing inventory, allowing users to view, add, remove, and categorize items. Includes search and sorting functionality by name or price.",
+    "live": "https://inventory-app-jbjm.onrender.com/",
+    "repo": "https://github.com/katiegd/inventory-app",
+    "tech": ["Node.js", "Express", "PostgreSQL", "EJS", "Bootstrap"],
+    "src": "src/assets/images/frootie.png"
+  },
+  {
+    "id": 3,
+    "name": "The Member Ship",
+    "description": "A Node.js/Express app with password encryption using bcrypt and authentication via Passport. Only members can access the message board, while only admins can delete messages.",
+    "live": "https://members-only-t2xa.onrender.com/",
+    "repo": "https://github.com/katiegd/members-only",
+    "tech": ["Node.js", "Express", "Passport", "PostgreSQL", "Bcrypt", "EJS"],
+    "src": "src/assets/images/member-ship.png"
+  },
+  {
+    "id": 4,
+    "name": "Weather Bee",
+    "description": "A weather app that displays the forecast for a given location. The theme adjusts based on whether it’s day or night at the location, and users can toggle between Fahrenheit and Celsius.",
+    "live": "https://katiegd.github.io/weather-app/",
+    "repo": "https://github.com/katiegd/weather-app",
+    "tech": ["Javascript", "CSS", "Webpack"],
+    "src": "src/assets/images/weatherbee.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder",
+    "description": "A resume builder that gathers key information from the user and formats it into a professional 8.5 x 11 layout. Once completed, users can download their resume as a PDF.",
+    "live": "https://clinquant-toffee-8944a0.netlify.app/",
+    "repo": "https://github.com/katiegd/CV-Application",
+    "tech": ["React", "CSS"],
+    "src": "src/assets/images/resumebuilder.png"
+  },
+  {
+    "id": 6,
+    "name": "Jaquette Storefront",
+    "description": "A small shopping app made with React as a part of the Odin Project curriculum. Uses routing, state, and various componenets to emulate a shopping experience for users on desktop, tablet, and mobile.",
+    "live": "https://jaquetteshop.netlify.app/shop",
+    "repo": "https://github.com/katiegd/shopping-cart",
+    "tech": ["React", "CSS"],
+    "src": "src/assets/images/jaquette.png"
+  }
+]

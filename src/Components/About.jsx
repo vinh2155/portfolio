@@ -4,7 +4,7 @@ export default function About() {
       id="about"
       className="bg-slate-100/[.97]  px-10 py-10 shadow-md  lg:rounded-3xl lg:max-w-6xl mb-10 mt-10"
     >
-      <p className="text-4xl font-serif font-bold tracking-tight pb-2 bg-gradient-to-r from-blue-600 to-indigo-800 inline-block text-transparent bg-clip-text">
+      <p className="text-5xl font-serif font-bold tracking-tight pb-2 bg-gradient-to-r from-blue-600 to-indigo-800 inline-block text-transparent bg-clip-text">
         Hi, I'm Katie!
       </p>
       <div className="text-xl tracking-tight pb-1">

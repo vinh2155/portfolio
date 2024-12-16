@@ -10,7 +10,13 @@ function Header() {
             <a href="#projects">Projects</a>
           </div>
           <div className="px-4 transition-all duration-300 cursor-pointer rounded-2xl  hover:bg-indigo-500 hover:text-white">
-            <a href="#resume">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1XyUBd0CT4GhxNXdtidB-KozoZnMZjuNY/view?usp=sharing"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </div>
           <div className="px-4 transition-all duration-300 cursor-pointer rounded-2xl  hover:bg-indigo-600 hover:text-white">
             <a href="#about">About</a>
