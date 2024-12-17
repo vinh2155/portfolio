@@ -9,6 +9,7 @@ export default function Footer() {
   const form = useRef();
   const [message, setMessage] = useState("");
   const [formData, setFormData] = useState("");
+  const [submit, setSubmitting] = useState(false);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -35,6 +36,7 @@ export default function Footer() {
       .then(
         () => {
           setMessage("Email sent!");
+          setSubmitting(false);
           clearForm();
         },
         (error) => {
@@ -47,7 +49,7 @@ export default function Footer() {
       id="contact"
       className="bg-slate-900 w-screen flex flex-col justify-center items-center p-20"
     >
-      <div className="sm:w-[50vw] bg-slate-800 shadow-lg p-10 md:p-20 rounded-xl">
+      <div className="md:w-[50vw] bg-slate-800 shadow-lg p-10 md:p-20 rounded-xl opacity-0 intersect:opacity-100 delay-300 duration-700 transition intersect-once">
         <p className="text-3xl sm:text-4xl font-serif font-bold tracking-tight pb-4 sm:pb-4 text-amber-200/[.99]">
           Get in touch:
         </p>{" "}
@@ -95,8 +97,9 @@ export default function Footer() {
               <button
                 type="submit"
                 className="bg-slate-900 w-fit p-2 rounded-md text-slate-200 font-extrabold hover:bg-slate-700 transition-all duration-300"
+                onClick={() => setSubmitting(true)}
               >
-                Submit
+                {submit ? "Sending..." : "Send"}
               </button>{" "}
               {message ? (
                 <p className="text-green-500 font-bold">{message}</p>
@@ -106,6 +109,25 @@ export default function Footer() {
             </div>
           </form>
         </div>
+      </div>
+      <div className="pt-32  text-slate-400 flex flex-col gap-2 items-center max-w-5xl w-screen">
+        <p>© Katie G. Duryea 2024</p>
+        <p>
+          Powered by{" "}
+          <a
+            href="https://react.dev/"
+            className="font-extrabold text-sky-600 hover:text-sky-300"
+          >
+            React
+          </a>{" "}
+          &{" "}
+          <a
+            href="https://tailwindcss.com/"
+            className="font-extrabold text-sky-600  hover:text-sky-300"
+          >
+            Tailwind
+          </a>
+        </p>
       </div>
     </div>
   );

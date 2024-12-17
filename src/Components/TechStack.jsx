@@ -2,13 +2,13 @@ import tech from "../assets/tech.json";
 export default function TechStack() {
   return (
     <>
-      <div className="bg-gradient-to-b from-slate-900 to-slate-800 px-0 pt-10 pb-10 sm:p-20 w-full flex flex-col sm:items-center justify-center">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-center">
+      <div className="bg-gradient-to-b from-slate-900 to-slate-800 px-0 pt-10 pb-10 md:p-20 w-full flex flex-col sm:items-center justify-center">
+        <div className="mx-auto max-w-7xl px-2 lg:px-8 flex flex-col sm:items-center opacity-0 intersect:opacity-100 delay-300 duration-700 transition intersect-once">
           <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]">
             Tools
           </h2>
-          <div className="mt-10 grid grid-cols-1  gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            <div className="flex flex-col gap-2 items items-center w-fit">
+          <div className="mt-10 grid grid-cols-1  gap-x-2 gap-y-10 sm:max-w-xl sm:grid-cols-3 md:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <div className="flex flex-col gap-2 items sm:items-center w-fit">
               <p className="text-xl font-black text-slate-200">Frontend</p>
               <div className="flex sm:flex-col flex-wrap gap-2">
                 {tech[0].frontend.map((item) => (
@@ -22,7 +22,7 @@ export default function TechStack() {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col gap-2 items items-center w-fit">
+            <div className="flex flex-col gap-2 items sm:items-center w-fit">
               <p className="text-xl font-black text-slate-200">Backend</p>
               <div className="flex sm:flex-col flex-wrap gap-2">
                 {tech[1].backend.map((item) => (
@@ -36,7 +36,7 @@ export default function TechStack() {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col gap-2 items items-center w-fit">
+            <div className="flex flex-col gap-2 sm:items-center w-fit">
               <p className="text-xl font-black text-slate-200">Misc</p>
               <div className="flex sm:flex-col flex-wrap gap-2">
                 {tech[2].other.map((item) => (

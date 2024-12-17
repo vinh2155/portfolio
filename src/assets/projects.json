@@ -1,5 +1,13 @@
 [
   {
+    "id": 0,
+    "name": "Triangle Threads Storefront",
+    "description": "Customized a Shopify theme using CSS and Liquid code to align with the client's vision for their e-commerce shop.",
+    "live": "https://trianglethreads.shop/",
+    "tech": ["CSS", "Liquid"],
+    "src": "images/triangleThreads.png"
+  },
+  {
     "id": 1,
     "name": "Find It: Futurama",
     "description": "This project combines backend and frontend functionality to create an interactive \"Where's Waldo?\"-style game. Users search for hidden characters in an image, receive feedback, and track their scores.",

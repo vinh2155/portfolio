@@ -7,10 +7,10 @@ export default function Projects() {
         id="projects"
         className="bg-slate-900 p-4 sm:p-10 flex flex-col sm:items-center justify-center w-screen"
       >
-        <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-4 sm:pb-12 text-amber-200/[.98]">
+        <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-4 sm:pb-12 text-amber-200/[.98] animate-fade duration-2000 delay-2000">
           Recent Projects
         </p>
-        <div className="grid gap-6 md:grid-cols-2 grid-cols-1 sm:max-w-5xl">
+        <div className="grid gap-6 md:grid-cols-2 grid-cols-1 sm:max-w-5xl animate-fade duration-2000 delay-1000">
           {projects.map((project) => (
             <div key={project.id} className="bg-slate-800 shadow sm:p-10 p-5">
               <div className="group relative overflow-hidden h-72 ">
@@ -26,12 +26,16 @@ export default function Projects() {
                   >
                     Live
                   </a>
-                  <a
-                    href={project.repo}
-                    className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
-                  >
-                    Repo
-                  </a>{" "}
+                  {project.repo ? (
+                    <a
+                      href={project.repo}
+                      className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
+                    >
+                      Repo
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
               <div className="flex flex-col gap-2">
