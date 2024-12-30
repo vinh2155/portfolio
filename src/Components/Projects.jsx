@@ -23,6 +23,7 @@ export default function Projects() {
                   <a
                     href={project.live}
                     className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
+                    target="_blank"
                   >
                     Live
                   </a>
@@ -30,6 +31,7 @@ export default function Projects() {
                     <a
                       href={project.repo}
                       className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
+                      target="_blank"
                     >
                       Repo
                     </a>
@@ -47,6 +49,7 @@ export default function Projects() {
                   <a
                     href={project.live}
                     className="font-black text-slate-200 underline"
+                    target="_blank"
                   >
                     Live
                   </a>{" "}
@@ -54,6 +57,7 @@ export default function Projects() {
                   <a
                     href={project.repo}
                     className="font-black text-slate-200 underline"
+                    target="_blank"
                   >
                     Code
                   </a>
