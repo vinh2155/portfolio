@@ -14,14 +14,14 @@ export default function Blurb() {
             Based in Durham, NC and seeking job opportunities.
           </p>
           <div className="flex gap-3">
-            <a href="https://github.com/katiegd">
+            <a href="https://github.com/katiegd" target="_blank">
               <img
                 src="images/github-svgrepo-com.svg"
                 alt="Github"
                 className="h-10 hover:scale-[1.05] transition-all duration-300"
               />
             </a>
-            <a href="https://www.linkedin.com/in/katiegduryea/">
+            <a href="https://www.linkedin.com/in/katiegduryea/" target="_blank">
               <img
                 src="images/linkedin-svgrepo-com.svg"
                 alt="LinkedIn"
