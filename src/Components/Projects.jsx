@@ -2,74 +2,86 @@ import projects from "../assets/projects.json";
 
 export default function Projects() {
   return (
-    <>
-      <div
-        id="projects"
-        className="bg-slate-900 p-4 sm:p-10 flex flex-col sm:items-center justify-center w-screen"
-      >
-        <p className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-4 sm:pb-12 text-amber-200/[.98] animate-fade duration-2000 delay-2000">
+    <div className="bg-white p-8 w-full flex flex-col items-center justify-start min-h-[calc(100vh-80px)]">
+      <div className="max-w-6xl mx-auto w-full">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-gray-800">
           Recent Projects
-        </p>
-        <div className="grid gap-6 md:grid-cols-2 grid-cols-1 sm:max-w-5xl animate-fade duration-2000 delay-1000">
+        </h2>
+        
+        <div className="grid gap-8 md:grid-cols-2 grid-cols-1">
           {projects.map((project) => (
-            <div key={project.id} className="bg-slate-800 shadow sm:p-10 p-5">
-              <div className="group relative overflow-hidden h-72 ">
+            <div key={project.id} className="bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div className="group relative overflow-hidden h-64">
                 <img
                   src={project.src}
-                  alt=""
-                  className="w-full h-full object-cover object-top origin-top transform transition-transform duration-500 ease-in-out group-hover:scale-105 cursor-pointer"
+                  alt={project.name}
+                  className="w-full h-full object-cover object-top transform transition-transform duration-500 ease-in-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center gap-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-pointer ">
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center gap-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <a
                     href={project.live}
-                    className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Live
+                    Live Demo
                   </a>
-                  {project.repo ? (
+                  {project.repo && (
                     <a
                       href={project.repo}
-                      className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
+                      className="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Repo
+                      Code
                     </a>
-                  ) : (
-                    ""
                   )}
                 </div>
               </div>
-              <div className="flex flex-col gap-2">
-                <p className="font-bold text-xl text-amber-200 pt-2">
+              
+              <div className="p-6">
+                <h3 className="font-bold text-xl text-gray-800 mb-3">
                   {project.name}
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  {project.description}
                 </p>
-                <p className="text-slate-200">{project.description}</p>
-                <div className="touch:block hidden text-slate-200">
-                  <a
-                    href={project.live}
-                    className="font-black text-slate-200 underline"
-                    target="_blank"
-                  >
-                    Live
-                  </a>{" "}
-                  /{" "}
-                  <a
-                    href={project.repo}
-                    className="font-black text-slate-200 underline"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </div>
-                <div className="flex gap-1 flex-wrap">
-                  {project.tech.map((tech, i) => (
-                    <p
-                      className="bg-rose-900 text-slate-50 font-semibold mt-2 text-xs py-0.5 px-1"
-                      key={tech[i]}
+                
+                {/* Mobile-friendly links */}
+                <div className="block md:hidden mb-4">
+                  <div className="flex gap-3">
+                    <a
+                      href={project.live}
+                      className="text-blue-600 hover:text-blue-700 font-semibold underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      #{tech}
-                    </p>
+                      Live Demo
+                    </a>
+                    {project.repo && (
+                      <>
+                        <span className="text-gray-400">•</span>
+                        <a
+                          href={project.repo}
+                          className="text-blue-600 hover:text-blue-700 font-semibold underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Code
+                        </a>
+                      </>
+                    )}
+                  </div>
+                </div>
+                
+                <div className="flex gap-2 flex-wrap">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full"
+                    >
+                      {tech}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -77,6 +89,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

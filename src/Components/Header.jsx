@@ -1,34 +1,26 @@
-function Header() {
+function Header({ activeTab, setActiveTab }) {
+  const tabs = ["Home", "Projects", "Work", "Tech Stack", "About Me", "Contact Me"];
+
   return (
     <>
-      <div className="bg-slate-800 m-0 flex flex-col text-3xl md:flex-row justify-between items-center sm:p-10 pt-4  text-amber-200  tracking-tight w-screen ">
-        <p className="sm:text-4xl font-black tracking-tight font-serif px-4 py-2 animate-fade-right">
-          <a href="https://katiegd.github.io/portfolio/">Katie Duryea</a>
+      <div className="bg-white shadow-sm border-b border-gray-200 m-0 flex flex-col text-lg md:flex-row justify-between items-center px-6 py-4 w-screen">
+        <p className="text-2xl md:text-3xl font-bold tracking-tight text-blue-600 mb-2 md:mb-0">
+          Katie Duryea
         </p>
-        <div className="flex justify-center gap-2 sm:gap-4 text-lg font-bold animate-fade-left">
-          <div className="rounded-md hover:bg-amber-200 hover:text-slate-800 sm:px-4 sm:py-2 transition-all duration-300 cursor-pointer px-2">
-            <a href="#projects">Projects</a>
-          </div>
-          <div className="rounded-md hover:bg-amber-200 hover:text-slate-800 sm:px-4 sm:py-2 transition-all duration-300 cursor-pointer px-2 flex items-center gap-1">
-            <a
-              href="https://drive.google.com/file/d/16wl8oRJXX7DOEmTTHKX8fERN_qV1HY2m/view?usp=sharing"
-              target="blank"
-              rel="noopener noreferrer"
+        <div className="flex justify-center gap-1 md:gap-2 text-sm md:text-base font-medium">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-3 md:px-4 py-2 rounded-md transition-all duration-200 cursor-pointer ${
+                activeTab === tab
+                  ? "bg-blue-100 text-blue-700 font-semibold"
+                  : "text-gray-600 hover:text-blue-600 hover:bg-gray-50"
+              }`}
             >
-              Resume{" "}
-            </a>{" "}
-            <img
-              src="images/open-in-new-svgrepo-com.svg"
-              alt=""
-              className="size-3"
-            />
-          </div>
-          <div className="rounded-md hover:bg-amber-200 hover:text-slate-800 sm:px-4 sm:py-2 transition-all duration-300 cursor-pointer px-2">
-            <a href="#about">About</a>
-          </div>
-          <div className="rounded-md hover:bg-amber-200 hover:text-slate-800 sm:px-4 sm:py-2 transition-all duration-300 cursor-pointer px-2">
-            <a href="#contact">Contact</a>
-          </div>
+              {tab}
+            </button>
+          ))}
         </div>
       </div>
     </>

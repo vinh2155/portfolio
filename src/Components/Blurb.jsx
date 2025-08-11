@@ -1,34 +1,59 @@
 export default function Blurb() {
   return (
-    <div className="bg-gradient-to-b from-slate-800 to-slate-900 p-4 sm:p-10  w-screen flex flex-col items-center justify-center h-[75vh] sm:h-[65dvh]">
-      <div className="text-slate-300 sm:text-center flex flex-col">
-        <p className="text-5xl md:text-7xl font-serif font-bold tracking-tight pb-2 bg-gradient-to-r from-amber-200 to-rose-600 inline-block text-transparent bg-clip-text animate-fade-down">
-          Hi, I'm Katie.
-        </p>
-        <div className="text-xl md:text-2xl md:w-[48rem] flex flex-col sm:items-center animate-fade-down">
-          <p className="tracking-tight pb-5">
-            I am a full stack developer with a passion for design and creating
-            beautiful, user-friendly websites.
+    <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 w-full flex flex-col items-center justify-center min-h-[calc(100vh-80px)]">
+      <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
+        {/* Profile Image */}
+        <div className="mb-8">
+          <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
+            <div className="w-full h-full rounded-full bg-gray-100 flex items-center justify-center">
+              <span className="text-6xl">👩‍💻</span>
+            </div>
+          </div>
+        </div>
+        
+        {/* Title */}
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-gray-800">
+          <span className="text-blue-600">Hi, I'm Katie.</span>
+        </h1>
+        
+        {/* Description */}
+        <div className="text-lg md:text-xl text-gray-600 max-w-2xl mb-8 space-y-4">
+          <p>
+            I'm a <span className="text-blue-600 font-semibold">full stack developer</span> who loves great design and building 
+            clean, user-friendly websites. With a background in video editing, 
+            I've developed a strong eye for detail and visual storytelling, 
+            which helps me create sites that don't just work well—they look 
+            great too.
           </p>
-          <p className="tracking-tight pb-5">
+          <p className="font-medium">
             Based in Durham, NC and seeking job opportunities.
           </p>
-          <div className="flex gap-3">
-            <a href="https://github.com/katiegd" target="_blank">
-              <img
-                src="images/github-svgrepo-com.svg"
-                alt="Github"
-                className="h-10 hover:scale-[1.05] transition-all duration-300"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/katiegduryea/" target="_blank">
-              <img
-                src="images/linkedin-svgrepo-com.svg"
-                alt="LinkedIn"
-                className="h-10 hover:scale-[1.05] transition-all duration-300"
-              />{" "}
-            </a>
-          </div>
+        </div>
+        
+        {/* Social Links */}
+        <div className="flex gap-4">
+          <a 
+            href="https://github.com/katiegd" 
+            target="_blank"
+            className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="images/github-svgrepo-com.svg"
+              alt="Github"
+              className="h-6 w-6"
+            />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/katiegduryea/" 
+            target="_blank"
+            className="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+          >
+            <img
+              src="images/linkedin-svgrepo-com.svg"
+              alt="LinkedIn"
+              className="h-6 w-6"
+            />
+          </a>
         </div>
       </div>
     </div>

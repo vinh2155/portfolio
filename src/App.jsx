@@ -1,25 +1,27 @@
-import { Observer } from "tailwindcss-intersect";
-import { useEffect } from "react";
-
+import { useState } from "react";
 import Header from "./Components/Header";
-import MainContent from "./Components/MainContent";
-import Footer from "./Components/Footer";
-import ScrollToTop from "./Components/ScrollToTop";
+import Blurb from "./Components/Blurb";
+import Projects from "./Components/Projects";
+import Work from "./Components/Work";
+import TechStack from "./Components/TechStack";
+import Contact from "./Components/Contact";
 
 function App() {
-  useEffect(() => {
-    Observer.start();
-  }, []);
+  const [activeTab, setActiveTab] = useState("Home");
 
   return (
-    <>
-      <div className="m-0 flex flex-col items-center text-slate-700 bg-gradient-to-t from-slate-50 to-slate-200 w-screen h-full scroll-smooth">
-        <ScrollToTop />
-        <Header />
-        <MainContent />
-        <Footer />
-      </div>
-    </>
+    <div className="min-h-screen bg-gray-50 text-slate-700">
+      <Header activeTab={activeTab} setActiveTab={setActiveTab} />
+      
+      <main>
+        {activeTab === "Home" && <Blurb />}
+        {activeTab === "Projects" && <Projects />}
+        {activeTab === "Work" && <Work />}
+        {activeTab === "Tech Stack" && <TechStack />}
+        {activeTab === "About Me" && <div className="bg-white p-8 w-full flex items-center justify-center min-h-[calc(100vh-80px)]"><h2 className="text-2xl text-gray-800">About Me - Coming Soon</h2></div>}
+        {activeTab === "Contact Me" && <Contact />}
+      </main>
+    </div>
   );
 }
 
