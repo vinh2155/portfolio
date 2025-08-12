@@ -18,7 +18,22 @@ function App() {
         {activeTab === "Projects" && <Projects />}
         {activeTab === "Work" && <Work />}
         {activeTab === "Tech Stack" && <TechStack />}
-        {activeTab === "About Me" && <div className="bg-white p-8 w-full flex items-center justify-center min-h-[calc(100vh-80px)]"><h2 className="text-2xl text-gray-800">About Me - Coming Soon</h2></div>}
+        {activeTab === "About Me" && (
+          <div className="bg-white p-8 w-full flex flex-col items-center justify-start min-h-[calc(100vh-80px)]">
+            <div className="max-w-4xl mx-auto w-full">
+              {/* Premium Title Section */}
+              <div className="text-center mb-16">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
+                  A Little About Me...
+                </h1>
+                <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-4"></div>
+              </div>
+              <div className="flex items-center justify-center">
+                <h2 className="text-2xl text-gray-800">Content Coming Soon</h2>
+              </div>
+            </div>
+          </div>
+        )}
         {activeTab === "Contact Me" && <Contact />}
       </main>
     </div>

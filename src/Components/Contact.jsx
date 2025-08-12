@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Icon } from '@iconify/react';
 
 const VITE_EMAIL_ID = import.meta.env.VITE_EMAIL_ID;
 const VITE_TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
@@ -47,9 +48,16 @@ export default function Contact() {
   return (
     <div className="bg-gray-50 p-8 w-full flex flex-col items-center justify-start min-h-[calc(100vh-80px)]">
       <div className="max-w-4xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-12 text-center text-gray-800">
-          Contact Me
-        </h2>
+        {/* Premium Title Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
+            Get in touch:
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-4"></div>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Want to collaborate on a project? Have a question? Let me know!
+          </p>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info */}
@@ -68,42 +76,42 @@ export default function Contact() {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                   </svg>
-                  <span className="text-gray-700">katie.duryea@example.com</span>
+                  <span className="text-gray-700">vinh.huyn4@gmail.com</span>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
                   </svg>
-                  <span className="text-gray-700">Durham, NC</span>
+                  <span className="text-gray-700">Montreal, Quebec</span>
                 </div>
               </div>
               
               <div className="pt-4">
-                <p className="text-gray-600 mb-4">Connect with me:</p>
-                <div className="flex gap-4">
+                <p className="text-gray-600 mb-6 font-medium">Connect with me:</p>
+                <div className="flex gap-6">
                   <a 
-                    href="https://github.com/katiegd" 
+                    href="https://github.com/vinh2155" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-300"
+                    className="group relative overflow-hidden bg-gradient-to-br from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 text-white p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                   >
-                    <img
-                      src="images/github-svgrepo-com.svg"
-                      alt="Github"
-                      className="h-6 w-6"
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    <Icon 
+                      icon="mdi:github" 
+                      className="text-2xl relative z-10" 
                     />
                   </a>
                   <a 
-                    href="https://www.linkedin.com/in/katiegduryea/" 
+                    href="https://www.linkedin.com/in/vinh-huynh-764230293/" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors duration-300"
+                    className="group relative overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                   >
-                    <img
-                      src="images/linkedin-svgrepo-com.svg"
-                      alt="LinkedIn"
-                      className="h-6 w-6"
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                    <Icon 
+                      icon="mdi:linkedin" 
+                      className="text-2xl relative z-10" 
                     />
                   </a>
                 </div>

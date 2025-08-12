@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-gray-800 text-white py-6 w-full">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="space-y-2">
-          <p className="text-gray-300">© Katie G. Duryea 2024</p>
+          <p className="text-gray-300">© Vinh H. 2025</p>
           <p className="text-gray-400">
             Powered by{" "}
             <a

@@ -1,6 +1,6 @@
 export default function Blurb() {
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 w-full flex flex-col items-center justify-center min-h-[calc(100vh-80px)]">
+    <div className="bg-gradient-to-br from-gray-50 to-blue-50 p-8 w-full flex flex-col items-center justify-center h-[calc(100vh-60px)] overflow-hidden">
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
         {/* Profile Image */}
         <div className="mb-8">
@@ -13,7 +13,7 @@ export default function Blurb() {
         
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-gray-800">
-          <span className="text-blue-600">Hi, I'm Katie.</span>
+          <span className="text-blue-600">Hi, I'm Vinh.</span>
         </h1>
         
         {/* Description */}
