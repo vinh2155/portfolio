@@ -6,8 +6,17 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto w-full">
         {/* Premium Title Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
-            Recent Projects
+          <h1 className="text-5xl md:text-7xl font-normal tracking-tight mb-6" style={{ fontFamily: 'Gloock, serif' }}>
+            <span 
+              className="bg-clip-text text-transparent"
+              style={{ 
+                backgroundImage: 'linear-gradient(to top right, #271d97ff, #bba3e4ff)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+            >
+              Recent Projects
+            </span>
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-4"></div>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">

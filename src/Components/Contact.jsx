@@ -50,8 +50,17 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto w-full">
         {/* Premium Title Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
-            Get in touch:
+          <h1 className="text-5xl md:text-7xl font-normal tracking-tight mb-6" style={{ fontFamily: 'Gloock, serif' }}>
+            <span 
+              className="bg-clip-text text-transparent"
+              style={{ 
+                backgroundImage: 'linear-gradient(to top right, #271d97ff, #bba3e4ff)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+            >
+              Get in touch:
+            </span>
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-4"></div>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -72,7 +81,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5" fill="#321a5aff" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                   </svg>
@@ -80,7 +89,7 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5" fill="#321a5aff" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
                   </svg>
                   <span className="text-gray-700">Montreal, Quebec</span>
@@ -94,24 +103,26 @@ export default function Contact() {
                     href="https://github.com/vinh2155" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative overflow-hidden bg-gradient-to-br from-gray-800 to-black hover:from-gray-700 hover:to-gray-900 text-white p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                    className="group relative overflow-hidden text-white p-2 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                    style={{ backgroundColor: '#321a5aff' }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                     <Icon 
                       icon="mdi:github" 
-                      className="text-2xl relative z-10" 
+                      className="text-4xl relative z-10" 
                     />
                   </a>
                   <a 
                     href="https://www.linkedin.com/in/vinh-huynh-764230293/" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative overflow-hidden bg-gradient-to-br from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white p-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                    className="group relative overflow-hidden text-white p-2 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                    style={{ backgroundColor: '#321a5aff' }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                     <Icon 
                       icon="mdi:linkedin" 
-                      className="text-2xl relative z-10" 
+                      className="text-4xl relative z-10" 
                     />
                   </a>
                 </div>
@@ -132,7 +143,22 @@ export default function Contact() {
                   type="text"
                   name="name"
                   id="name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg transition-colors"
+                  style={{ 
+                    '&:focus': { 
+                      outline: 'none',
+                      borderColor: '#321a5aff',
+                      boxShadow: '0 0 0 2px rgba(50, 26, 90, 0.2)'
+                    }
+                  }}
+                  onFocus={(e) => {
+                    e.target.style.borderColor = '#321a5aff';
+                    e.target.style.boxShadow = '0 0 0 2px rgba(50, 26, 90, 0.2)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = '#d1d5db';
+                    e.target.style.boxShadow = 'none';
+                  }}
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -147,7 +173,15 @@ export default function Contact() {
                   type="email"
                   name="email"
                   id="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg transition-colors"
+                  onFocus={(e) => {
+                    e.target.style.borderColor = '#321a5aff';
+                    e.target.style.boxShadow = '0 0 0 2px rgba(50, 26, 90, 0.2)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = '#d1d5db';
+                    e.target.style.boxShadow = 'none';
+                  }}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -162,7 +196,15 @@ export default function Contact() {
                   name="message"
                   id="message"
                   rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg transition-colors resize-none"
+                  onFocus={(e) => {
+                    e.target.style.borderColor = '#321a5aff';
+                    e.target.style.boxShadow = '0 0 0 2px rgba(50, 26, 90, 0.2)';
+                  }}
+                  onBlur={(e) => {
+                    e.target.style.borderColor = '#d1d5db';
+                    e.target.style.boxShadow = 'none';
+                  }}
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -172,7 +214,17 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={submit}
-                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                className="w-full text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                style={{ 
+                  backgroundColor: submit ? 'rgba(50, 26, 90, 0.6)' : '#321a5aff',
+                  '&:hover': { backgroundColor: 'rgba(50, 26, 90, 0.8)' }
+                }}
+                onMouseEnter={(e) => {
+                  if (!submit) e.target.style.backgroundColor = 'rgba(50, 26, 90, 0.8)';
+                }}
+                onMouseLeave={(e) => {
+                  if (!submit) e.target.style.backgroundColor = '#321a5aff';
+                }}
               >
                 {submit ? "Sending..." : "Send Message"}
               </button>

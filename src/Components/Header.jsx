@@ -1,5 +1,5 @@
 function Header({ activeTab, setActiveTab }) {
-  const tabs = ["Home", "Projects", "Tech Stack", "About Me", "Contact Me"];
+  const tabs = ["Home", "Projects", "Work", "Tech Stack", "About Me", "Contact Me"];
 
   return (
     <>

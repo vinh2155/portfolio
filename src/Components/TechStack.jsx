@@ -49,8 +49,17 @@ export default function TechStack() {
       <div className="max-w-5xl mx-auto w-full">
         {/* Title */}
         <div className="text-center mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-tight">
-            Tech Stack
+          <h1 className="text-5xl md:text-7xl font-normal tracking-tight mb-6" style={{ fontFamily: 'Gloock, serif' }}>
+            <span 
+              className="bg-clip-text text-transparent"
+              style={{ 
+                backgroundImage: 'linear-gradient(to top right, #271d97ff, #bba3e4ff)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent'
+              }}
+            >
+              Tech Stack
+            </span>
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full mb-4"></div>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -69,13 +78,16 @@ export default function TechStack() {
                 {section.data.map((tech, index) => (
                   <div
                     key={index}
-                    className="group relative overflow-hidden bg-gradient-to-tl from-slate-800 to-slate-700 text-white rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer"
+                    className="group relative overflow-hidden text-white rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 transform hover:scale-105 hover:shadow-lg cursor-pointer"
+                    style={{ 
+                      background: 'linear-gradient(to top, #321a5aff, #4a2d7aff)',
+                    }}
                   >
                     <div className="relative flex items-center gap-2 z-10">
                       <div className="group-hover:scale-110 transition-transform duration-300">
                         <Icon 
                           icon={tech.icon} 
-                          className="text-base md:text-lg" 
+                          className="text-lg md:text-xl" 
                         />
                       </div>
                       <span className="font-medium text-xs md:text-sm whitespace-nowrap">
