@@ -16,14 +16,14 @@ export default function Work() {
       company: "McGill University",
       date: "2025-2029",
       description:
-        "Will begin my first year in Software Engineering at McGill, my first time learning from professors after self-teaching online, to study algorithms, data structures, software design, and programming fundamentals through lectures, labs, and team projects. ",
+        "Will begin my first year in Software Engineering at McGill, my first time learning from professors after self-teaching online, to study algorithms, data structures, software design, and programming fundamentals. ",
     },
     {
       title: "Software Developper Intern",
       company: "Tail'ed",
       date: "2025",
       description:
-        "Started my first experience in a real software engineering team, learning how to collaborate effectively through code reviews, version control, and clear communication. Gained exposure to agile workflows and team-based problem solving while contributing to shared projects.",
+        "Started my first experience in a real software engineering team, learning how to collaborate effectively through code reviews, version control, and clear communication. The work was organized using Jira and daily morning meetings, where each team member shared what they had accomplished the previous day and their plans for the day ahead",
     },
     {
       title: "Software Developper Intern",
@@ -37,7 +37,7 @@ export default function Work() {
       company: "Jean-de-Brebeuf College",
       date: "2023-2025",
       description:
-        "Building custom web applications for small businesses and startups. Specializing in React, Node.js, and modern web technologies. Successfully delivered multiple projects ranging from e-commerce platforms to portfolio websites, helping clients establish their digital presence.",
+        "Gained experience as an IB student managing the Extended Essay, CAS (creativity, activity, service), and TOK courses while meeting strict deadlines. Learned a bit of C#",
     },
   ];
 
@@ -84,14 +84,14 @@ export default function Work() {
                 } perspective-1000`}
               >
                 <div
-                  className={`relative h-48 w-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${
+                  className={`relative min-h-52 w-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${
                     flippedCards[index] ? 'rotate-y-180' : ''
                   }`}
                   onClick={() => toggleCard(index)}
                 >
                   {/* Front of Card */}
                   <div className="absolute inset-0 w-full h-full backface-hidden">
-                    <div className="p-6 rounded-xl border border-gray-200 bg-white shadow-lg hover:shadow-2xl hover:scale-105 hover:border-blue-300 transition-all duration-300 h-full group">
+                    <div className="p-6 rounded-xl border border-gray-200 bg-white shadow-lg hover:shadow-2xl hover:scale-105 hover:border-blue-300 transition-all duration-300 min-h-full group flex flex-col">
                       <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="text-xs text-gray-400 bg-gray-100 px-2 py-1 rounded-full">
                           Click to flip
@@ -106,7 +106,7 @@ export default function Work() {
                       <p className="font-semibold text-gray-600 mb-3 group-hover:text-gray-700 transition-colors duration-300">
                         {item.company}
                       </p>
-                      <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                      <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 flex-grow">
                         {item.description}
                       </p>
                       <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110">
@@ -122,33 +122,152 @@ export default function Work() {
 
                   {/* Back of Card */}
                   <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
-                    <div className="p-6 rounded-xl border border-blue-300 bg-gradient-to-br from-blue-50 to-purple-50 shadow-2xl h-full flex items-center justify-center overflow-hidden relative">
+                    <div className="p-6 rounded-xl border border-blue-300 bg-gradient-to-br from-blue-50 to-purple-50 shadow-2xl min-h-full flex flex-col justify-center overflow-hidden relative">
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-100/50 to-purple-100/50"></div>
-                      <div className="relative z-10 text-center">
-                        <div className="mb-4 transform hover:scale-110 transition-transform duration-500">
-                          <img
-                            src="src/assets/images/download_ex.png"
-                            alt="Experience Detail"
-                            className="w-24 h-24 mx-auto rounded-full shadow-xl border-4 border-white object-cover"
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                              e.target.nextSibling.style.display = 'flex';
-                            }}
-                          />
-                          <div className="w-24 h-24 mx-auto rounded-full shadow-xl border-4 border-white bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center" style={{display: 'none'}}>
-                            <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
+                      <div className="relative z-10 text-center flex-grow flex flex-col justify-center">
+                        {item.title === "IB Student" ? (
+                          <div className="space-y-4">
+                            <h4 className="text-lg font-bold text-gray-800 mb-3">Additional Achievements</h4>
+                            <div className="space-y-3 text-sm text-gray-700">
+                              <div className="bg-white/60 rounded-lg p-3 backdrop-blur-sm">
+                                <p className="font-semibold text-blue-700 mb-1">Student Association Member</p>
+                                <p>Active participant in the student association</p>
+                                <a 
+                                  href="https://www.instagram.com/ageb.brebeuf/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600 hover:text-blue-800 underline text-xs"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  @ageb.brebeuf
+                                </a>
+                              </div>
+                              <div className="bg-white/60 rounded-lg p-3 backdrop-blur-sm">
+                                <p className="font-semibold text-purple-700 mb-1">BrebeufHx</p>
+                                <p>VP Sponsorship of Quebec's biggest pre-university hackathon</p>
+                                <a 
+                                  href="https://www.brebeufhackathon.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-purple-600 hover:text-purple-800 underline text-xs"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  brebeufhackathon.com
+                                </a>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <h4 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h4>
-                        <p className="text-sm text-gray-600 mb-4">Detailed View</p>
+                        ) : item.title === "Software Developper Intern" && item.company === "MCG-3D" ? (
+                          <div className="space-y-4">
+                            <h4 className="text-lg font-bold text-gray-800 mb-3">Company Links</h4>
+                            <div className="space-y-3 text-sm text-gray-700">
+                              <div className="bg-white/60 rounded-lg p-3 backdrop-blur-sm">
+                                <p className="font-semibold text-blue-700 mb-1">Company LinkedIn</p>
+                                <p>MCG Digital Assetization Company</p>
+                                <a 
+                                  href="https://www.linkedin.com/company/mcg-digital-assetization-company/posts/?feedView=all" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600 hover:text-blue-800 underline text-xs"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  LinkedIn Profile
+                                </a>
+                              </div>
+                              <div className="bg-white/60 rounded-lg p-3 backdrop-blur-sm">
+                                <p className="font-semibold text-green-700 mb-1">Company Product</p>
+                                <p>Digicopy - Digital asset management platform</p>
+                                <a 
+                                  href="https://app.digicopy.me/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-green-600 hover:text-green-800 underline text-xs"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  app.digicopy.me
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        ) : item.title === "Software Developper Intern" && item.company === "Tail'ed" ? (
+                          <div className="space-y-4">
+                            <h4 className="text-lg font-bold text-gray-800 mb-3">Company Links</h4>
+                            <div className="space-y-3 text-sm text-gray-700">
+                              <div className="bg-white/60 rounded-lg p-3 backdrop-blur-sm">
+                                <p className="font-semibold text-blue-700 mb-1">Company LinkedIn</p>
+                                <p>Tail'ed - Professional Network</p>
+                                <a 
+                                  href="https://www.linkedin.com/company/tailed/posts/?feedView=all" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-blue-600 hover:text-blue-800 underline text-xs"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  LinkedIn Profile
+                                </a>
+                              </div>
+                              <div className="bg-white/60 rounded-lg p-3 backdrop-blur-sm">
+                                <p className="font-semibold text-orange-700 mb-1">Company Website</p>
+                                <p>Official Tail'ed website and platform</p>
+                                <a 
+                                  href="https://tailed.ca/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-orange-600 hover:text-orange-800 underline text-xs"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  tailed.ca
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        ) : item.title === "Software Engineering Student" && item.company === "McGill University" ? (
+                          <div className="space-y-4">
+                            <h4 className="text-lg font-bold text-gray-800 mb-3">University Information</h4>
+                            <div className="space-y-3 text-sm text-gray-700">
+                              <div className="bg-white/60 rounded-lg p-3 backdrop-blur-sm">
+                                <p className="font-semibold text-red-700 mb-1">McGill University</p>
+                                <p>Official McGill University website</p>
+                                <a 
+                                  href="https://www.mcgill.ca/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-red-600 hover:text-red-800 underline text-xs"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  mcgill.ca
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        ) : (
+                          <div>
+                            <div className="mb-4 transform hover:scale-110 transition-transform duration-500">
+                              <img
+                                src="src/assets/images/download_ex.png"
+                                alt="Experience Detail"
+                                className="w-24 h-24 mx-auto rounded-full shadow-xl border-4 border-white object-cover"
+                                onError={(e) => {
+                                  e.target.style.display = 'none';
+                                  e.target.nextSibling.style.display = 'flex';
+                                }}
+                              />
+                              <div className="w-24 h-24 mx-auto rounded-full shadow-xl border-4 border-white bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center" style={{display: 'none'}}>
+                                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                              </div>
+                            </div>
+                            <h4 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h4>
+                            <p className="text-sm text-gray-600 mb-4">Detailed View</p>
+                          </div>
+                        )}
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             toggleCard(index);
                           }}
-                          className="px-4 py-2 bg-white/80 hover:bg-white text-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 backdrop-blur-sm"
+                          className="px-4 py-2 bg-white/80 hover:bg-white text-gray-700 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 backdrop-blur-sm mt-4"
                         >
                           Back to Details
                         </button>

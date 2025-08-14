@@ -1,64 +1,56 @@
 [
   {
     "id": 0,
-    "name": "Triangle Threads Storefront",
-    "description": "Customized a Shopify theme using CSS and Liquid code to align with the client's vision for their e-commerce shop.",
-    "live": "https://trianglethreads.shop/",
-    "tech": ["CSS", "Liquid"],
-    "src": "images/triangleThreads.png"
+    "name": "Cirk",
+    "description": "The ultimate hub for highschool campus life, connecting students with committees, events, and campus news. A fully functional app built with Next.js, featuring secure authentication with Lucia, robust data management with Supabase and Drizzle ORM, and deployed on Vercel for optimal performance.",
+    "repo": "https://github.com/Emile1515/campus-core",
+    "live": "#",
+    "tech": ["React", "Vite", "Next.js", "TailwindCSS", "ShadCN", "Supabase", "DrizzeORM", "Node.js", "Lucia", "Typescript", "Vercel"],
+    "src": "Cirk_Video.mp4",
+    "isVideo": true
   },
   {
     "id": 1,
-    "name": "Find It: Futurama",
+    "name": "MovieHub",
     "description": "This project combines backend and frontend functionality to create an interactive \"Where's Waldo?\"-style game. Users search for hidden characters in an image, receive feedback, and track their scores.",
-    "live": "https://waldo-1qf2.onrender.com/",
-    "repo": "https://github.com/katiegd/waldo",
-    "tech": ["Node.js", "Express", "PrismaORM", "PostgreSQL", "React", "CSS"],
-    "src": "images/finditfuturama.png"
+    "live": "https://movie-hub-gules.vercel.app/",
+    "repo": "https://github.com/vinh2155/MovieHub",
+    "tech": ["React", "Vite", "React Router", "LocalStorage", "Node.js","Vercel"],
+    "src": "MovieHub_Video.mp4",
+    "isVideo": true
   },
   {
     "id": 2,
-    "name": "Frootie Inventory App",
-    "description": "A full-featured CRUD app for managing inventory, allowing users to view, add, remove, and categorize items. Includes search and sorting functionality by name or price.",
-    "live": "https://inventory-app-jbjm.onrender.com/",
-    "repo": "https://github.com/katiegd/inventory-app",
-    "tech": ["Node.js", "Express", "PostgreSQL", "EJS", "Bootstrap"],
-    "src": "images/frootie.png"
+    "name": "Simple Blockchain",
+    "description": "A basic blockchain implementation with REST API endpoints, featuring proof-of-work mining, transaction management, and decentralized node networking. Includes mining rewards, chain validation, and consensus mechanisms for maintaining blockchain integrity across multiple nodes.",
+    "repo": "https://github.com/vinh2155/blockchain",
+    "tech": ["Python", "Postman", "Flask", "Hashlib", "Requests"],
+    "src": "images/blockchain.png"
   },
   {
     "id": 3,
-    "name": "The Member Ship",
-    "description": "A Node.js/Express app with password encryption using bcrypt and authentication via Passport. Only members can access the message board, while only admins can delete messages.",
-    "live": "https://members-only-t2xa.onrender.com/",
-    "repo": "https://github.com/katiegd/members-only",
-    "tech": ["Node.js", "Express", "Passport", "PostgreSQL", "Bcrypt", "EJS"],
-    "src": "images/member-ship.png"
+    "name": "Mini Message Board",
+    "description": "A minimalist message board application built with Express and EJS, enabling users to post, view, and manage messages. Features include adding new messages, displaying message lists, and basic message management for simple online communication.",
+    "live": "https://message-board-hzx0.onrender.com/",
+    "repo": "https://github.com/vinh2155/Mini_Message_Board",
+    "tech": ["Node.js", "Express", "EJS", "CSS3", "HTML5","Render"],
+    "src": "MessageBoard_Video.mp4",
+    "isVideo": true
   },
   {
     "id": 4,
-    "name": "Weather Bee",
-    "description": "A weather app that displays the forecast for a given location. The theme adjusts based on whether it’s day or night at the location, and users can toggle between Fahrenheit and Celsius.",
-    "live": "https://katiegd.github.io/weather-app/",
-    "repo": "https://github.com/katiegd/weather-app",
-    "tech": ["Javascript", "CSS", "Webpack"],
-    "src": "images/weatherbee.png"
+    "name": "Diabetes Classification",
+    "description": "A comprehensive machine learning project for diabetes classification using the OSEMN data science pipeline. The notebook covers data cleaning and visualization with pandas for data manipulation and matplotlib for graphical exploration. Predictive modeling is performed to identify diabetes presence from patient health metrics, focusing on optimized Logistic Regression and K-Nearest Neighbors (KNN) models, resulting in an accuracy of 77%",
+    "repo": "https://github.com/vinh2155/Diabetes-classification",
+    "tech": ["Kaggle", "scikit-learn", "Numpy","Pandas", "Matplotlib", "Seaborn"],
+    "src": "images/diabete.jpg"
   },
   {
     "id": 5,
-    "name": "Resume Builder",
-    "description": "A resume builder that gathers key information from the user and formats it into a professional 8.5 x 11 layout. Once completed, users can download their resume as a PDF.",
-    "live": "https://clinquant-toffee-8944a0.netlify.app/",
-    "repo": "https://github.com/katiegd/CV-Application",
-    "tech": ["React", "CSS"],
-    "src": "images/resumebuilder.png"
-  },
-  {
-    "id": 6,
-    "name": "Jaquette Storefront",
-    "description": "A small shopping app made with React as a part of the Odin Project curriculum. Uses routing, state, and various componenets to emulate a shopping experience for users on desktop, tablet, and mobile.",
-    "live": "https://jaquetteshop.netlify.app/shop",
-    "repo": "https://github.com/katiegd/shopping-cart",
-    "tech": ["React", "CSS"],
-    "src": "images/jaquette.png"
+    "name": "E-commerce",
+    "description": "A linear regression model to forecast e-commerce sales, leveraging advanced data preprocessing, feature selection, and exploratory data analysis on a dataset of 4,000+ records. Utilized pandas and seaborn for in-depth data visualization and trend analysis achieving a RMSE of 10.19 (2.04% of the dataset mean)",
+    "repo": "https://github.com/vinh2155/E-commerce-Model",
+    "tech": ["Kaggle", "scikit-learn", "Pandas","Scipy", "Matplotlib", "Seaborn"],
+    "src": "images/E-commerce.png"
   }
 ]
