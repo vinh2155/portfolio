@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 const VITE_EMAIL_ID = import.meta.env.VITE_EMAIL_ID;
 const VITE_TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-const publicKey = "pNKa7x6AE6evisT6m";
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export default function Contact() {
   const form = useRef();

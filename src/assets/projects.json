@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Cirk",
     "description": "The ultimate hub for highschool campus life, connecting students with committees, events, and campus news. A fully functional app built with Next.js, featuring secure authentication with Lucia, robust data management with Supabase and Drizzle ORM, and deployed on Vercel for optimal performance.",
-    "repo": "https://github.com/Emile1515/campus-core",
+    "repo": "https://github.com/vinh2155/cirk",
     "live": "#",
     "tech": ["React", "Vite", "Next.js", "TailwindCSS", "ShadCN", "Supabase", "DrizzeORM", "Node.js", "Lucia", "Typescript", "Vercel"],
     "src": "Cirk_Video.mp4",
@@ -12,7 +12,7 @@
   {
     "id": 1,
     "name": "MovieHub",
-    "description": "This project combines backend and frontend functionality to create an interactive \"Where's Waldo?\"-style game. Users search for hidden characters in an image, receive feedback, and track their scores.",
+    "description": "Vite-powered React SPA for movie discovery using the TMDB API, featuring fast client-side routing with React Router, responsive search/detail views, and favorites persisted via LocalStorage. Premium UI/UX with polished, responsive styling and smooth interactions. Built with Node.js tooling and deployed on Vercel for optimized static delivery and preview deployments.",
     "live": "https://movie-hub-gules.vercel.app/",
     "repo": "https://github.com/vinh2155/MovieHub",
     "tech": ["React", "Vite", "React Router", "LocalStorage", "Node.js","Vercel"],

@@ -52,25 +52,47 @@ export default function Projects() {
                   />
                 )}
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center gap-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Demo
-                    </a>
-                  )}
-                  {project.repo && (
-                    <a
-                      href={project.repo}
-                      className="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Code
-                    </a>
+                  {project.name === "Cirk" ? (
+                    // Special button for Cirk project
+                    <>
+                      <div className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300 cursor-default">
+                        In the making
+                      </div>
+                      {project.repo && (
+                        <a
+                          href={project.repo}
+                          className="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Code
+                        </a>
+                      )}
+                    </>
+                  ) : (
+                    // Regular buttons for other projects
+                    <>
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Live Demo
+                        </a>
+                      )}
+                      {project.repo && (
+                        <a
+                          href={project.repo}
+                          className="bg-gray-800 hover:bg-gray-900 text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-300"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Code
+                        </a>
+                      )}
+                    </>
                   )}
                 </div>
               </div>
@@ -86,25 +108,48 @@ export default function Projects() {
                 {/* Mobile-friendly links */}
                 <div className="block md:hidden mb-4">
                   <div className="flex gap-3">
-                    <a
-                      href={project.live}
-                      className="text-blue-600 hover:text-blue-700 font-semibold underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Demo
-                    </a>
-                    {project.repo && (
+                    {project.name === "Cirk" ? (
                       <>
-                        <span className="text-gray-400">•</span>
-                        <a
-                          href={project.repo}
-                          className="text-blue-600 hover:text-blue-700 font-semibold underline"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Code
-                        </a>
+                        <span className="text-orange-600 font-semibold">In the making</span>
+                        {project.repo && (
+                          <>
+                            <span className="text-gray-400">•</span>
+                            <a
+                              href={project.repo}
+                              className="text-blue-600 hover:text-blue-700 font-semibold underline"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Code
+                            </a>
+                          </>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        {project.live && (
+                          <a
+                            href={project.live}
+                            className="text-blue-600 hover:text-blue-700 font-semibold underline"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Live Demo
+                          </a>
+                        )}
+                        {project.repo && (
+                          <>
+                            <span className="text-gray-400">•</span>
+                            <a
+                              href={project.repo}
+                              className="text-blue-600 hover:text-blue-700 font-semibold underline"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Code
+                            </a>
+                          </>
+                        )}
                       </>
                     )}
                   </div>
