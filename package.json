@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://katiegd/github.io/portfolio",
+  "homepage": "https://github.com/vinh2155/portfolio",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
@@ -39,7 +39,7 @@
     "tailwindcss-intersect": "^2.0.1",
     "vite": "^5.4.9"
   },
-  "description": "A personal portfolio for Katie G. Duryea",
+  "description": "A personal portfolio for Vinh Huynh",
   "main": "eslint.config.js",
   "author": "",
   "license": "ISC"
